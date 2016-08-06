@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Game</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        
+        <div>
+            <div></div>
+            
+            
+        </div>
+        
+        
+        <div class="header">
+
+            <label>Title</label>
+            <input id="name" name="name" type="text" required>
+            <button id="btnSave">Create</button>
+        </div>
+
+        <div class="leftArea">
+            <ul id="gameList"></ul>
+        </div>
+
+        <form id="gameForm">
+            <div class="mainArea">
+                <div id="create_view" class="mainArea">
+                    <label>Id:</label>
+                    <input id="gameId" name="id" type="text" disabled />
+                    <label>Title</label>
+                    <input id="title" name="title" type="text" disabled />
+                    <button id="btnDelete">Delete</button>
+                    <button id="btnStart">Start Game</button>
+                </div>
+                <div id="game_view" class="mainArea">
+                    <label id="gname"></label>
+                    <ul id="playerList"></ul>
+                </div>
+            </div>
+        </form>
+
+
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
